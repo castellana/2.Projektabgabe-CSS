@@ -1,5 +1,3 @@
-body {
-color: #323A45 / #848484; }
 * {
     margin: 0;
     padding: 0;
@@ -19,12 +17,6 @@ color: #323A45 / #848484; }
     align-items: flex-start;
 
 }
-/* .bottom-nav div {
-    width: 25%;
-} */
-.h1__link:hover, .nav__link:hover {
-    color:#000;
-}
 .header-menu {
     list-style: none;
 }
@@ -32,20 +24,19 @@ color: #323A45 / #848484; }
     display: inline-block;
     padding: 20px 0 20px 20px;
 }
-.nav__link, .h1__link{
+.nav__link, .nav__link-inline{
     text-decoration: none;
     font-size: 0.7rem;
     color:#000;
-    display: block;
     font-weight: bold;
 }
-.nav__p {
-    font-size: 0.7rem;
-    color: #000;
+.nav__link {
+    display: block;
 }
-.bottom-nav h2{
-    color: #000;
+.nav__link:hover {
+    color:rgba(0, 0, 0, 0.5);
 }
+
 /*MAIN*/
 main {
     width: 85%;
@@ -57,11 +48,23 @@ main {
     grid-template-rows: 3fr;
     justify-items: center;
     align-items: center;
-    gap: 15px;
-
+    gap: 20px;
+}
+figcaption {
+    display: flex;
+    justify-content: space-between; 
+}
+.fig__link, .price{
+    display: block;
+    text-decoration: none;
+    color: #323A45;
+    font-weight: bold;
+    padding-bottom: 5vh;
+    font-size: 0.8rem;
+    line-height: 4vh;
 }
 
-.product__name, .price, h2{
+h2{
     font-size: 0.8rem;
     line-height: 4vh;
     color:  #323A45;
@@ -70,6 +73,7 @@ main {
 .company {
     color: #848484;
     display: block;
+
 }
 .big {
     grid-column: 1 / -1;
@@ -81,20 +85,52 @@ img {
 img:hover {
     opacity: 0.5;
 }
-figcaption {
-    display: flex;
-    justify-content: space-between;
-    
+
+.bottom-nav a, .bottom-nav p {
+    line-height: 4vh;
+}
+.bottom-nav div:first-child {
+    width: 27%;
+}
+.nav__p {
+    font-size: 0.7rem;
+    color: #000;
+}
+.bottom-nav h2{
+    color: #000;
 }
 
-/* .bottom-nav {
-    display: flex;
-    width: 85%;
-    justify-content: space-evenly;
-
-} */
-
+/*Footer*/
 footer .nav__p {
     color: #848484;
     margin: 10vh 0 5vh 7.5%;
 }
+
+/*Media Queries*/
+@media only screen and (max-width: 770px) {
+  .main-section {
+      grid-template-columns: 1fr;
+    }
+    .figure {
+      width: 500px;
+      height: 500px;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media only screen and (max-width: 580px) {
+    .main-section {
+        grid-template-columns: 1fr;
+      }
+      .figure {
+        width: 500px;
+        height: 500px;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .bottom-nav {
+        flex-direction: column;
+      }
+    }
