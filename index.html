@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,74 +10,84 @@
         @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     </style>
 </head>
+
 <body>
     <header>
         <nav class="header-nav">
-            <h1><a class="nav__link" href="#">THE DESIGN SHOP</a> </h1>
-            <ul class="header-menu">
-                <li class="header__item"><a href="" class="nav__link">Weekly Recommendations</a></li>
-                <li class="header__item"><a href="" class="nav__link">Contact</a></li>
-                <li class="header__item"><a href="" class="nav__link">TDB</a></li>
-            </ul>
+            <h1><a class="nav__link" href="#">THE DESIGN SHOP</a></h1>
+            <div class="menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+                <ul class="header-menu">
+                    <li class="header__item"> <a href="" class="nav__link">Weekly Recommendations</a></li>
+                    <li class="header__item"> <a href="" class="nav__link">Contact</a></li> 
+                    <li class="header__item"><a href="" class="nav__link">TDB</a></li>  
+                </ul>
+            </div>
         </nav>
     </header>
+
     <main>
         <section class="main-section">
             <figure class="big">
                 <a href="https://amzn.to/32MmHgL" target="_blank">
-                    <img src="assets/img/1.png" alt="backpack" class="big__img">
-                </a> 
+                    <img src="assets/img/1.png" alt="backpack">
+                </a>
 
                 <figcaption>
                     <a class="fig__link" href="https://amzn.to/32MmHgL" target="_blank">Kanken Art Laptop 15" Special Edition Backpack
-                    <span class="company">Fjallraven</span>
-                </a> 
-
+                        <span class="company">Fjallraven</span>
+                    </a>
                     <p class="price">$119.00</p>
                 </figcaption>
             </figure>
-<!--second line-->
+            <!--second line-->
             <figure class="small">
                 <a href="https://amzn.to/2WX7vtD" target="_blank">
-                    <img src="assets/img/2_d2.png" alt="lamp" class="small__img">
-                </a> 
+                    <img src="assets/img/2_d2.png" alt="lamp">
+                </a>
 
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2WX7vtD" target="_blank">Swing Arm Wood Desk Lamp<span class="company">Tomons</span>
-                    </a> 
+                    <a class="fig__link" href="https://amzn.to/2WX7vtD" target="_blank">Swing Arm Wood Desk Lamp
+                        <span class="company">Tomons</span>
+                    </a>
                     <p class="price">$36.00</p>
                 </figcaption>
             </figure>
 
             <figure class="small">
                 <a href="https://amzn.to/2I3WvXM" target="_blank">
-                    <img src="assets/img/3_u6.png" alt="backpack grey" class="small__img">
-                </a> 
+                    <img src="assets/img/3_u6.png" alt="backpack grey">
+                </a>
 
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2I3WvXM" target="_blank">Hajo Backpack<span class="company">Ucon Acrobatics</span>
-                    </a> 
+                    <a class="fig__link" href="https://amzn.to/2I3WvXM" target="_blank">Hajo Backpack
+                        <span class="company">Ucon Acrobatics</span>
+                    </a>
                     <p class="price">$89.00</p>
                 </figcaption>
             </figure>
 
             <figure class="small">
                 <a href="https://amzn.to/2YX3043" target="_blank">
-                    <img src="assets/img/4_u10.png" alt="skateboard" class="small__img">
-                </a>     
+                    <img src="assets/img/4_u10.png" alt="skateboard">
+                </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2YX3043" target="_blank">Zed Bamboo Longboard<span class="company">Retrospec</span>
-                    </a>  
+                    <a class="fig__link" href="https://amzn.to/2YX3043" target="_blank">Zed Bamboo Longboard
+                        <span class="company">Retrospec</span>
+                    </a>
                     <p class="price">$60.00</p>
                 </figcaption>
             </figure>
-<!--third line-->
+            <!--third line-->
             <figure class="small">
                 <a href="https://amzn.to/2KfP3ee" target="_blank">
-                    <img src="assets/img/5_u9.png" alt="kettle" class="small__img">
+                    <img src="assets/img/5_u9.png" alt="kettle">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2KfP3ee" target="_blank">Electric Pour-Over Kettle<span class="company">Fellow</span>
+                    <a class="fig__link" href="https://amzn.to/2KfP3ee" target="_blank">Electric Pour-Over Kettle
+                        <span class="company">Fellow</span>
                     </a>
                     <p class="price">$149.00</p>
                 </figcaption>
@@ -84,22 +95,26 @@
 
             <figure class="small">
                 <a href="https://amzn.to/2FYB3zT" target="_blank">
-                    <img src="assets/img/6_h17.png" alt="car" class="small__img">
+                    <img src="assets/img/6_h17.png" alt="car">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2FYB3zT" target="_blank">Woodie Vintage Car<span class="company">Candylab Toys</span>
+                    <a class="fig__link" href="https://amzn.to/2FYB3zT" target="_blank">Woodie Vintage Car
+                        <span class="company">Candylab Toys</span>
                     </a>
-
                     <p class="price">$35.00</p>
                 </figcaption>
             </figure>
 
             <figure class="small">
-                <a href="https://www.bookdepository.com/Logo-Modernism-Jens-Muller-R-Roger-Remington/9783836545303/?a_aid=1991" target="_blank">
-                    <img src="assets/img/7_c3.png" alt="logo" class="small__img">
+                <a href="https://www.bookdepository.com/Logo-Modernism-Jens-Muller-R-Roger-Remington/9783836545303/?a_aid=1991"
+                    target="_blank">
+                    <img src="assets/img/7_c3.png" alt="logo">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://www.bookdepository.com/Logo-Modernism-Jens-Muller-R-Roger-Remington/9783836545303/?a_aid=1991" target="_blank">Logo Modernism<span class="company">Taschen</span>
+                    <a class="fig__link"
+                        href="https://www.bookdepository.com/Logo-Modernism-Jens-Muller-R-Roger-Remington/9783836545303/?a_aid=1991"
+                        target="_blank">Logo Modernism
+                        <span class="company">Taschen</span>
                     </a>
                     <p class="price">$60.00</p>
                 </figcaption>
@@ -110,22 +125,24 @@
         <section class="main-section">
             <figure class="big">
                 <a href="https://amzn.to/2YQLnCV" target="_blank">
-                    <img src="assets/img/s2_1_d7.png" alt="white book" class="big__img">
+                    <img src="assets/img/s2_1_d7.png" alt="white book">
                 </a>
 
                 <figcaption>
                     <a class="fig__link" href="https://amzn.to/2YQLnCV" target="_blank">Dieter Rams: As Little Design as Possible
-                    <span class="company">Sophie Lovell</span></a>
+                        <span class="company">Sophie Lovell</span>
+                    </a>
                     <p class="price">$150.00</p>
                 </figcaption>
             </figure>
-<!--sec#2 line#2-->
+            <!--sec#2 line#2-->
             <figure class="small">
                 <a href="https://amzn.to/2I3lbQ7" target="_blank">
-                    <img src="assets/img/s2_2_c6.png" alt="the eye book" class="small__img">
+                    <img src="assets/img/s2_2_c6.png" alt="the eye book">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2I3lbQ7" target="_blank">The Eye<span class="company">Nathan Williams</span>
+                    <a class="fig__link" href="https://amzn.to/2I3lbQ7" target="_blank">The Eye
+                        <span class="company">Nathan Williams</span>
                     </a>
                     <p class="price">$28.00</p>
                 </figcaption>
@@ -133,10 +150,11 @@
 
             <figure class="small">
                 <a href="https://amzn.to/2IifSvA" target="_blank">
-                    <img src="assets/img/s2_3_h13.png" alt="desk organizer" class="small__img">
+                    <img src="assets/img/s2_3_h13.png" alt="desk organizer">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2IifSvA" target="_blank">Gather Desk Organizer<span class="company">Ugmonk</span>
+                    <a class="fig__link" href="https://amzn.to/2IifSvA" target="_blank">Gather Desk Organizer
+                        <span class="company">Ugmonk</span>
                     </a>
                     <p class="price">$149.00</p>
                 </figcaption>
@@ -144,22 +162,23 @@
 
             <figure class="small">
                 <a href="https://amzn.to/2G84CiT" target="_blank">
-                    <img src="assets/img/s2_4_h8.png" alt="black bottle" class="small__img">
+                    <img src="assets/img/s2_4_h8.png" alt="black bottle">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2G84CiT" target="_blank">Dipped Canteen<span class="company">Corkcicle.</span>
+                    <a class="fig__link" href="https://amzn.to/2G84CiT" target="_blank">Dipped Canteen
+                        <span class="company">Corkcicle.</span>
                     </a>
-
                     <p class="price">$28.00</p>
                 </figcaption>
             </figure>
-<!--sec#2 line#3-->
+            <!--sec#2 line#3-->
             <figure class="small">
                 <a href="https://amzn.to/2YWPz3N" target="_blank">
-                    <img src="assets/img/s2_5_h2.png" alt="white chair" class="small__img">
+                    <img src="assets/img/s2_5_h2.png" alt="white chair">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2YWPz3N" target="_blank">Sayl Office Chair White<span class="company">Herman Miller</span>
+                    <a class="fig__link" href="https://amzn.to/2YWPz3N" target="_blank">Sayl Office Chair White
+                        <span class="company">Herman Miller</span>
                     </a>
                     <p class="price">$599.00</p>
                 </figcaption>
@@ -167,24 +186,24 @@
 
             <figure class="small">
                 <a href="https://amzn.to/2KhwTsz" target="_blank">
-                    <img src="assets/img/s2_6_d5.png" alt="notebook" class="small__img">
+                    <img src="assets/img/s2_6_d5.png" alt="notebook">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2KhwTsz" target="_blank">Three Cherry Wood Notebook<span class="company">Field Notes</span>
+                    <a class="fig__link" href="https://amzn.to/2KhwTsz" target="_blank">Three Cherry Wood Notebook
+                        <span class="company">Field Notes</span>
                     </a>
-
                     <p class="price">$13.00</p>
                 </figcaption>
             </figure>
 
             <figure class="small">
                 <a href="https://www.bookdepository.com/From-Japan/9780957081659?a_aid=1991" target="_blank">
-                    <img src="assets/img/s2_7_c5.png" alt="a red book" class="small__img">
+                    <img src="assets/img/s2_7_c5.png" alt="a red book">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://www.bookdepository.com/From-Japan/9780957081659?a_aid=1991" target="_blank">From Japan<span class="company">Counter Print</span>
+                    <a class="fig__link" href="https://www.bookdepository.com/From-Japan/9780957081659?a_aid=1991" target="_blank">From Japan
+                            <span class="company">Counter Print</span>
                     </a>
-
                     <p class="price">$16.00</p>
                 </figcaption>
             </figure>
@@ -193,22 +212,23 @@
         <section class="main-section">
             <figure class="big">
                 <a href="http://www.grupaproducts.com/arigato/" target="_blank">
-                    <img src="assets/img/s3_1_h6.png" alt="black desk lamp" class="big__img">
+                    <img src="assets/img/s3_1_h6.png" alt="black desk lamp">
                 </a>
                 <figcaption>
                     <a class="fig__link" href="http://www.grupaproducts.com/arigato/" target="_blank">Arigato Desk Lamp
-                    <span class="company">Grupa</span>
-                </a>
+                        <span class="company">Grupa</span>
+                    </a>
                     <p class="price">$380.00</p>
                 </figcaption>
             </figure>
-<!--sec#3 line#2-->
+            <!--sec#3 line#2-->
             <figure class="small">
                 <a href="https://amzn.to/2CZiPxO" target="_blank">
-                    <img src="assets/img/s3_2_u7.png" alt="watch" class="small__img">
+                    <img src="assets/img/s3_2_u7.png" alt="watch">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2CZiPxO" target="_blank">Winston Regal Watch<span class="company">Komono</span>
+                    <a class="fig__link" href="https://amzn.to/2CZiPxO" target="_blank">Winston Regal Watch
+                        <span class="company">Komono</span>
                     </a>
                     <p class="price">$58.00</p>
                 </figcaption>
@@ -216,10 +236,12 @@
 
             <figure class="small">
                 <a href="https://heyshop.es/collections/home/products/h-hey" target="_blank">
-                    <img src="assets/img/s3_3_d4.png" alt="book?" class="small__img">
+                    <img src="assets/img/s3_3_d4.png" alt="book?">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://heyshop.es/collections/home/products/h-hey" target="_blank">Letter H Poster<span class="company">Hey Studio</span>
+                    <a class="fig__link" href="https://heyshop.es/collections/home/products/h-hey"
+                        target="_blank">Letter H Poster
+                        <span class="company">Hey Studio</span>
                     </a>
                     <p class="price">$45.00</p>
                 </figcaption>
@@ -227,21 +249,23 @@
 
             <figure class="small">
                 <a href="https://amzn.to/2UGLHEQ" target="_blank">
-                    <img src="assets/img/s3_4_u11.png" alt="coffee beans" class="small__img">
+                    <img src="assets/img/s3_4_u11.png" alt="coffee beans">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2UGLHEQ" target="_blank">Coffee Can<span class="company">Blue Bottle Company</span>
+                    <a class="fig__link" href="https://amzn.to/2UGLHEQ" target="_blank">Coffee Can
+                        <span class="company">Blue Bottle Company</span>
                     </a>
                     <p class="price">$11.00</p>
                 </figcaption>
             </figure>
-<!--sec#3 line#3-->
+            <!--sec#3 line#3-->
             <figure class="small">
                 <a href="https://amzn.to/2UFjEWp" target="_blank">
-                    <img src="assets/img/s3_5_h9.png" alt="white headphones" class="small__img">
+                    <img src="assets/img/s3_5_h9.png" alt="white headphones">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2UFjEWp" target="_blank">Beoplay H4<span class="company">Bang & Olufsen</span>
+                    <a class="fig__link" href="https://amzn.to/2UFjEWp" target="_blank">Beoplay H4
+                        <span class="company">Bang & Olufsen</span>
                     </a>
                     <p class="price">$160.00</p>
                 </figcaption>
@@ -249,22 +273,23 @@
 
             <figure class="small">
                 <a href="https://amzn.to/2OTHEQg" target="_blank">
-                    <img src="assets/img/s3_6_p2.png" alt="yellow book" class="small__img">
+                    <img src="assets/img/s3_6_p2.png" alt="yellow book">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2OTHEQg" target="_blank">Make It Now<span class="company">Anthony Burrill</span>
+                    <a class="fig__link" href="https://amzn.to/2OTHEQg" target="_blank">Make It Now
+                        <span class="company">Anthony Burrill</span>
                     </a>
-
                     <p class="price">$22.00</p>
                 </figcaption>
             </figure>
 
             <figure class="small">
                 <a href="https://amzn.to/2UFHfGt" target="_blank">
-                    <img src="assets/img/s3_7_h4.png" alt="black chair" class="small__img">
+                    <img src="assets/img/s3_7_h4.png" alt="black chair">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2UFHfGt" target="_blank">Black Side Chair<span class="company">Eames Style</span>
+                    <a class="fig__link" href="https://amzn.to/2UFHfGt" target="_blank">Black Side Chair
+                        <span class="company">Eames Style</span>
                     </a>
                     <p class="price">$54.00</p>
                 </figcaption>
@@ -274,22 +299,23 @@
         <section class="main-section">
             <figure class="big">
                 <a href="https://amzn.to/2Ij1IKA" target="_blank">
-                    <img src="assets/img/s4_1__c22.png" alt="blue book" class="big__img">
+                    <img src="assets/img/s4_1__c22.png" alt="blue book">
                 </a>
                 <figcaption>
                     <a class="fig__link" href="https://amzn.to/2Ij1IKA" target="_blank">Min: The New Simplicity in Graphic Design
-                    <span class="company">Thames & Hudson</span></a>
-
+                        <span class="company">Thames & Hudson</span>
+                    </a>
                     <p class="price">$28.00</p>
                 </figcaption>
             </figure>
-<!--sec#4 line#2-->
+            <!--sec#4 line#2-->
             <figure class="small">
                 <a href="https://amzn.to/2UxtLww" target="_blank">
-                    <img src="assets/img/s4_2_c1.png" alt="orange book" class="small__img">
+                    <img src="assets/img/s4_2_c1.png" alt="orange book">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2UxtLww" target="_blank">Grid systems in graphic design<span class="company">Josef Müller-Brockmann</span>
+                    <a class="fig__link" href="https://amzn.to/2UxtLww" target="_blank">Grid systems in graphic design
+                        <span class="company">Josef Müller-Brockmann</span>
                     </a>
                     <p class="price">$42.00</p>
                 </figcaption>
@@ -297,10 +323,11 @@
 
             <figure class="small">
                 <a href="https://amzn.to/2I5vxiq" target="_blank">
-                    <img src="assets/img/s3_3_d4.png" alt="car wallet" class="small__img">
+                    <img src="assets/img/s3_3_d4.png" alt="car wallet">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2I5vxiq" target="_blank">Card Wallet<span class="company">Herschel</span>
+                    <a class="fig__link" href="https://amzn.to/2I5vxiq" target="_blank">Card Wallet
+                        <span class="company">Herschel</span>
                     </a>
                     <p class="price">$15.00</p>
                 </figcaption>
@@ -308,21 +335,24 @@
 
             <figure class="small">
                 <a href="https://goodfuckingdesignadvice.com/products/classic-advice-print" target="_blank">
-                    <img src="assets/img/s3_4_u11.png" alt="book" class="small__img">
+                    <img src="assets/img/s3_4_u11.png" alt="book">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://goodfuckingdesignadvice.com/products/classic-advice-print" target="_blank">Classic Advice Print Black<span class="company">Good Fucking Design Advice</span>
+                    <a class="fig__link" href="https://goodfuckingdesignadvice.com/products/classic-advice-print"
+                        target="_blank">Classic Advice Print Black
+                        <span class="company">Good Fucking Design Advice</span>
                     </a>
                     <p class="price">$30.00</p>
                 </figcaption>
             </figure>
-<!--sec#4 line#3-->
+            <!--sec#4 line#3-->
             <figure class="small">
                 <a href="https://amzn.to/2D3yZWX" target="_blank">
-                    <img src="assets/img/s3_5_h9.png" alt="black mouse" class="small__img">
+                    <img src="assets/img/s3_5_h9.png" alt="black mouse">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2D3yZWX" target="_blank">Magic Mouse 2<span class="company">Apple</span>
+                    <a class="fig__link" href="https://amzn.to/2D3yZWX" target="_blank">Magic Mouse 2
+                        <span class="company">Apple</span>
                     </a>
                     <p class="price">$92.00</p>
                 </figcaption>
@@ -330,12 +360,12 @@
 
             <figure class="small">
                 <a href="https://amzn.to/2WTbsPL" target="_blank">
-                    <img src="assets/img/s3_6_p2.png" alt="Insulated bottle black" class="small__img">
+                    <img src="assets/img/s3_6_p2.png" alt="Insulated bottle black">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2WTbsPL" target="_blank">Travel Tumbler<span class="company">Kinto</span>
+                    <a class="fig__link" href="https://amzn.to/2WTbsPL" target="_blank">Travel Tumbler
+                        <span class="company">Kinto</span>
                     </a>
-
                     <p class="price">$34.00</p>
                 </figcaption>
             </figure>
@@ -343,10 +373,11 @@
 
             <figure class="small">
                 <a href="https://amzn.to/2GbCf4A" target="_blank">
-                    <img src="assets/img/s3_7_h4.png" alt="computer keyboard" class="small__img">
+                    <img src="assets/img/s3_7_h4.png" alt="computer keyboard">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2GbCf4A" target="_blank">Magic Keyboard<span class="company">Apple</span>
+                    <a class="fig__link" href="https://amzn.to/2GbCf4A" target="_blank">Magic Keyboard
+                        <span class="company">Apple</span>
                     </a>
                     <p class="price">$139.00</p>
                 </figcaption>
@@ -356,21 +387,23 @@
         <section class="main-section">
             <figure class="big">
                 <a href="https://amzn.to/2WMJbdy" target="_blank">
-                    <img src="assets/img/s5_1_u8.png" alt="two bottles" class="big__img">
+                    <img src="assets/img/s5_1_u8.png" alt="two bottles">
                 </a>
                 <figcaption>
                     <a class="fig__link" href="https://amzn.to/2WMJbdy" target="_blank">Bottle Grinder
-                    <span class="company">Menu</span></a>
+                        <span class="company">Menu</span>
+                    </a>
                     <p class="price">$75.00</p>
                 </figcaption>
             </figure>
-<!--sec#5 line#2-->
+            <!--sec#5 line#2-->
             <figure class="small">
                 <a href="https://amzn.to/2JLtxvk" target="_blank">
-                    <img src="assets/img/s5_2_home-8.png" alt="thermo vaccuum flask" class="small__img">
+                    <img src="assets/img/s5_2_home-8.png" alt="thermo vaccuum flask">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2JLtxvk" target="_blank">Geo Thermos<span class="company">Normann Copenhagen</span>
+                    <a class="fig__link" href="https://amzn.to/2JLtxvk" target="_blank">Geo Thermos
+                        <span class="company">Normann Copenhagen</span>
                     </a>
                     <p class="price">$62.00</p>
                 </figcaption>
@@ -378,10 +411,11 @@
 
             <figure class="small">
                 <a href="https://amzn.to/2YdSBPy" target="_blank" class="img__link">
-                    <img src="assets/img/s5_3_home-10.png" alt="grey chair and ottoman" class="small__img">
+                    <img src="assets/img/s5_3_home-10.png" alt="grey chair and ottoman">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2YdSBPy" target="_blank">Womb Chair & Ottoman<span class="company">Kardiel</span>
+                    <a class="fig__link" href="https://amzn.to/2YdSBPy" target="_blank">Womb Chair & Ottoman
+                        <span class="company">Kardiel</span>
                     </a>
                     <p class="price">$799.00</p>
                 </figcaption>
@@ -390,10 +424,12 @@
 
             <figure class="small">
                 <a href="https://amzn.to/2LCEfGP" target="_blank">
-                    <img src="assets/img/s5_4_home-9.png" alt="glass carafe of water" class="small__img">
+                    <img src="assets/img/s5_4_home-9.png" alt="glass carafe of water">
                 </a>
                 <figcaption>
-                    <a class="fig__link" href="https://amzn.to/2LCEfGP" target="_blank">Water Filter Glass Carafe<span class="company">Soma</span></a>
+                    <a class="fig__link" href="https://amzn.to/2LCEfGP" target="_blank">Water Filter Glass Carafe
+                        <span class="company">Soma</span>
+                    </a>
                     <p class="price">$30.00</p>
                 </figcaption>
             </figure>
@@ -404,7 +440,8 @@
     <nav class="bottom-nav">
         <div>
             <h2>The Design Shop</h2>
-            <p class="nav__p">Carefully curated online design store,<br> founded and designed by <a href="#" class="nav__link-inline">Ruby Bacanovic</a></p>
+            <p class="nav__p">Carefully curated online design store,<br> founded and designed by <a href="#"
+                    class="nav__link-inline">Ruby Bacanovic</a></p>
         </div>
         <div>
             <h2>Contact</h2>
@@ -427,4 +464,5 @@
         <p class="nav__p">&copy;2019 The Design Shop • The Design Blog</p>
     </footer>
 </body>
+
 </html>

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
 }
 
 /*NAVIGATION*/
@@ -33,10 +34,13 @@
 .nav__link {
     display: block;
 }
-.nav__link:hover {
+.nav__link:hover, .nav__link-inline:hover {
     color:rgba(0, 0, 0, 0.5);
 }
-
+/* hamburger icon is hidden on desktops */
+#menu-toggle, .hamburger {
+    display: none;
+  }
 /*MAIN*/
 main {
     width: 85%;
@@ -46,8 +50,6 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 3fr;
-    justify-items: center;
-    align-items: center;
     gap: 20px;
 }
 figcaption {
@@ -78,7 +80,6 @@ h2{
 .big {
     grid-column: 1 / -1;
 }
-
 img {
     width: 100%;
 }
@@ -107,30 +108,55 @@ footer .nav__p {
 }
 
 /*Media Queries*/
-@media only screen and (max-width: 770px) {
-  .main-section {
-      grid-template-columns: 1fr;
+@media only screen and (max-width: 770px) { /*If the browser window is 600px or smaller*/
+    .menu {
+        padding: .3rem;
+        display: flex; 
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
     }
-    .figure {
-      width: 500px;
-      height: 500px;
+    .header-menu {
+        display: none;
     }
-    p {
-      font-size: 1rem;
+    .header__item {
+        padding: 0;
+        display: block;
     }
-  }
-  @media only screen and (max-width: 580px) {
+    .header__item a {
+        display: block;
+        text-align: right;
+    }
+    .hamburger {
+        display: flex;
+    }
+    /*when hamburger icon is checked, nav links will pop out */
+    #menu-toggle:checked ~ .header-menu {
+        display: flex;
+        flex-direction: column;
+    }
     .main-section {
         grid-template-columns: 1fr;
-      }
-      .figure {
-        width: 500px;
-        height: 500px;
-      }
-      p {
-        font-size: 1rem;
-      }
-      .bottom-nav {
-        flex-direction: column;
-      }
+        gap: 5px;
     }
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .figure {
+        width: 50%;
+        height: 10vh;
+    } 
+    .bottom-nav {
+        flex-direction: column;
+    }
+    .bottom-nav div:first-child {
+        width: 80%;
+    }
+    .bottom-nav h2 {
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+}
