@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-/*NAVIGATION*/
+/*Navigation*/
+
 .header-nav, .bottom-nav {
     display: flex;
     justify-content: space-between;
@@ -13,10 +14,12 @@
     width: 85%;
     margin: 0 auto;
 }
+.header-nav {
+    height: 20vh;
+}
 .bottom-nav {
     margin-top: 10vh;
     align-items: flex-start;
-
 }
 .header-menu {
     list-style: none;
@@ -37,11 +40,10 @@
 .nav__link:hover, .nav__link-inline:hover {
     color:rgba(0, 0, 0, 0.5);
 }
-/* hamburger icon is hidden on desktops */
-#menu-toggle, .hamburger {
+#menu-toggle, .hamburger {/* hamburger icon is hidden on desktops */
     display: none;
-  }
-/*MAIN*/
+}
+/*Main*/
 main {
     width: 85%;
     margin: 0 auto;
@@ -66,7 +68,7 @@ figcaption {
     line-height: 4vh;
 }
 
-h2{
+h2 {
     font-size: 0.8rem;
     line-height: 4vh;
     color:  #323A45;
@@ -75,7 +77,6 @@ h2{
 .company {
     color: #848484;
     display: block;
-
 }
 .big {
     grid-column: 1 / -1;
@@ -108,13 +109,17 @@ footer .nav__p {
 }
 
 /*Media Queries*/
-@media only screen and (max-width: 770px) { /*If the browser window is 600px or smaller*/
+@media only screen and (max-width: 600px) { /*If the browser window is 600px or smaller*/
     .menu {
         padding: .3rem;
         display: flex; 
-        justify-content: center;
         align-items: flex-end;
         flex-direction: column;
+
+        position: absolute;
+        top: 7vh;
+        right: 7%;
+      /* flex: 1; */
     }
     .header-menu {
         display: none;
@@ -142,9 +147,6 @@ footer .nav__p {
     p {
         font-size: 1rem;
     }
-}
-
-@media only screen and (max-width: 600px) {
     .figure {
         width: 50%;
         height: 10vh;
