@@ -30,7 +30,7 @@
 }
 .nav__link, .nav__link-inline{
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color:#000;
     font-weight: bold;
 }
@@ -64,12 +64,12 @@ figcaption {
     color: #323A45;
     font-weight: bold;
     padding-bottom: 3vh;
-    font-size: 0.73rem;
+    font-size: 1rem;
     line-height: 3vh;
 }
 
 h2 {
-    font-size: 0.73rem;
+    font-size: 1rem;
     line-height: 4vh;
     color:  #323A45;
     padding-bottom: 4vh;
@@ -96,7 +96,7 @@ img:hover {
     width: 27%;
 }
 .nav__p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: #000;
 }
 .bottom-nav h2{
