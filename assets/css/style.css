@@ -109,7 +109,7 @@ footer .nav__p {
 }
 
 /*Media Queries*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     .menu {
         padding: .3rem;
         display: flex; 
